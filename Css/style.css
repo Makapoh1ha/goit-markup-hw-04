@@ -230,9 +230,7 @@ img {
   cursor: pointer;
 }
 .mail:focus,
-.header-link-vector:focus,
-.mail:hover,
-.header-link-vector:hover {
+.mail:hover {
   color: var(--blue);
   fill: var(--blue);
 }
@@ -244,11 +242,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--grey);
   cursor: pointer;
-}
-.tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/vector.svg);
 }
 .tel:focus,
 .tel:hover {
