@@ -52,6 +52,20 @@ img {
 }
 
 /* -----header---- */
+
+.vector {
+  margin-right: 10px;
+}
+
+.header-link-vector {
+  fill: var(--grey);
+}
+
+.header-link-vector:hover,
+.header-link-vector:focus {
+  fill: var(--blue);
+}
+
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -216,8 +230,11 @@ img {
   cursor: pointer;
 }
 .mail:focus,
-.mail:hover {
+.header-link-vector:focus,
+.mail:hover,
+.header-link-vector:hover {
   color: var(--blue);
+  fill: var(--blue);
 }
 .tel {
   font-style: normal;
@@ -227,6 +244,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--grey);
   cursor: pointer;
+}
+.tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/vector.svg);
 }
 .tel:focus,
 .tel:hover {
@@ -610,7 +632,7 @@ img {
 }
 
 .main-list {
-  display: inline-block;
+  display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -637,6 +659,8 @@ img {
 .button-portfolio-blue:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-portfolio {
   font-style: normal;
@@ -655,19 +679,27 @@ img {
 .button-portfolio:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ------ portfolio------ */
 .portfolio-list {
-  display: inline-block;
+  display: block;
   display: flex;
   max-width: 1200px;
   flex-wrap: wrap;
+}
+.link-portfolio {
 }
 
 .portfolio-list-box {
   background-color: var(--white);
   width: 370px;
+}
+.portfolio-list-box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .foto-box {
@@ -683,6 +715,11 @@ img {
   background-color: var(--white);
 }
 
+.portfolio-list-box-second:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list-box-second:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -692,6 +729,11 @@ img {
   width: 370px;
   background-color: var(--white);
   margin-bottom: 30px;
+}
+
+.portfolio-list-box-thirdt:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list-box-thirdt:not(:last-child) {
@@ -704,11 +746,14 @@ img {
   margin-bottom: 30px;
 }
 
+.final:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list-text {
   padding: 24px 20px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
   background-color: var(--white);
 }
 
