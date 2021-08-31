@@ -400,6 +400,8 @@ img {
 }
 
 .team-about-list {
+  padding-left: 32px;
+  padding-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -456,9 +458,7 @@ img {
 .team-icon-list {
   display: block;
   display: flex;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-top: 16px;
 }
 
 .team-icon-style {
@@ -493,13 +493,6 @@ img {
 .clients-list-list {
   width: 170px;
   height: 92px;
-}
-
-.clients-list-list:hover {
-  cursor: pointer;
-  fill: var(--blue);
-  border: 1px solid var(--blue);
-  border-radius: 4px;
 }
 
 .clients-list-list:not(:last-child) {
